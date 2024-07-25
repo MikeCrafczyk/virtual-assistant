@@ -1,0 +1,51 @@
+1. Przetwarzanie dokumentów
+	Cel: Asystent powinien umieć czytać dokumenty w formatach PDF, Word (doc/docx) oraz TXT i wyciągać z nich ważne informacje.
+
+	Komponenty:
+
+		Parser dokumentów:
+		PDF: Użycie bibliotek takich jak PyMuPDF lub PDFMiner.
+		Word (doc/docx): Użycie biblioteki python-docx.
+		TXT: Proste operacje na plikach tekstowych w Pythonie.
+		Ekstrakcja informacji:
+		NLP (Natural Language Processing): Użycie bibliotek takich jak spaCy lub transformers do ekstrakcji kluczowych informacji.
+		Reguły i modele ML: Stworzenie reguł lub trenowanie modeli do identyfikacji ważnych sekcji w dokumentach.
+2. Odpowiadanie na pytania użytkownika
+	Cel: Asystent powinien odpowiadać na pytania użytkownika zarówno tekstowo, jak i głosowo.
+
+	Komponenty:
+	
+		Interfejs użytkownika:
+		Tekstowy: Użycie frameworków webowych (np. Flask, Django) do stworzenia interfejsu tekstowego.
+		Głosowy: Użycie bibliotek do przetwarzania mowy, np. SpeechRecognition do rozpoznawania mowy oraz gTTS (Google Text-to-Speech) do generowania odpowiedzi głosowych.
+		Silnik odpowiedzi:
+		Chatbot: Użycie modeli językowych (np. GPT-4) do generowania odpowiedzi na pytania.
+		Kontekstowe przetwarzanie: Przechowywanie kontekstu rozmowy w sesji użytkownika, aby zapewnić spójność odpowiedzi.
+3. Obsługa różnych awatarów
+	Cel: Asystent powinien mieć możliwość zmiany awatarów wraz z odpowiadającym im głosem.
+
+Komponenty:
+
+	Wybór awatara:
+	Interfejs graficzny: Tworzenie GUI do wyboru awatarów.
+	Baza awatarów: Przechowywanie obrazów awatarów i powiązanych z nimi głosów.
+	Syntetyzacja głosu:
+	Model TTS: Użycie różnych modeli TTS (np. Tacotron 2, WaveNet) do generowania głosu odpowiedniego dla wybranego awatara.
+	Baza danych głosów: Nagrania głosów lub modele przetwarzania głosu dla każdego awatara.
+4. Integracja i uruchomienie
+	Cel: Integracja wszystkich komponentów i uruchomienie asystenta.
+
+	Komponenty:
+
+		Backend: Flask/Django do obsługi logiki aplikacji.
+		Frontend: HTML/CSS/JavaScript do interfejsu użytkownika.
+		API: RESTful API do komunikacji między frontendem a backendem.
+		Bezpieczeństwo: Uwierzytelnianie użytkowników, szyfrowanie danych.
+5. Testowanie i wdrożenie
+	Cel: Przetestowanie aplikacji i wdrożenie jej na produkcję.
+
+	Komponenty:
+
+		Testowanie: Jednostkowe, integracyjne, funkcjonalne testy wszystkich komponentów.
+		CI/CD: Konfiguracja pipeline'u do automatycznego testowania i wdrażania aplikacji.
+		Monitoring: Narzędzia do monitorowania wydajności i dostępności asystenta (np. New Relic, Grafana).
